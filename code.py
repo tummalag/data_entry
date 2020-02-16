@@ -8,9 +8,9 @@ page = wb.active
 # New data to write:
 def dataEntry():
     fieldNames = ['Date','Job ID','Job Title','Job Description','Company Name','Client Name']
-    fieldValues = easygui.multenterbox('Enter the Data','Job Entry List', fieldNames)
-    d, j_id, j_title, j_description,c_name, cli_name   = fieldValues
-    row = [fieldValues]
+    fieldVals = easygui.multenterbox('Enter the Data','Job Entry List', fieldNames)
+    d, j_id, j_title, j_description,c_name, cli_name   = fieldVals
+    row = [fieldVals]
     
     if j_id == '': 
         easygui.msgbox(msg="Data is required", title="Data Error", ok_button="OK")
